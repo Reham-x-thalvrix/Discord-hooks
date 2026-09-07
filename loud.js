@@ -109,7 +109,7 @@
     const curve = new Float32Array(size);
 
     for (let i = 0; i < size; i++) {
-      const x = (i * 2) / size) - 1;
+      const x = (i * 2) / size - 1; // এখানে অতিরিক্ত বন্ধনী ')' টি বাদ দেওয়া হয়েছে
       curve[i] = Math.tanh(x * 1.35);
     }
 
